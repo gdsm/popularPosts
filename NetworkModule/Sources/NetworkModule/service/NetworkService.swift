@@ -33,7 +33,7 @@ final class NetworkService: INetworkService {
     
     private func parse<T: Codable>(data: Data, response: URLResponse) -> Result<T, NetworkError> {
         guard let resp = response as? HTTPURLResponse else {
-            return .failure(.invlidResponse)
+            return .failure(.invalidResponse)
         }
         switch resp.statusCode {
         case 200..<300:

@@ -13,8 +13,8 @@ final class LoginHelper: ILoginHelper {
     
     private let nwService: INetworkService
     
-    init(nwFactory: INetworkFactory = NetworkModule.getFactory()) {
-        self.nwService = nwFactory.service()
+    init(nwService: INetworkService = NetworkModule.getFactory().service()) {
+        self.nwService = nwService
     }
     
     func createUser(email: String, password: String) -> Observable<UserModel> {
@@ -59,8 +59,5 @@ final class LoginHelper: ILoginHelper {
                 task.cancel()
             }
         }
-
-//        return Observable.just(UserModel(email: email, name: email))
-//            .delay(.seconds(2), scheduler: SerialDispatchQueueScheduler(qos: .default))
     }
 }

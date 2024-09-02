@@ -55,6 +55,11 @@
 		E6785DA52C85D27A00DD1DAC /* AppRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D942C85D27A00DD1DAC /* AppRootViewModel.swift */; };
 		E6785DA62C85D27A00DD1DAC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D952C85D27A00DD1DAC /* LoginViewModel.swift */; };
 		E6785DA72C85D27A00DD1DAC /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D962C85D27A00DD1DAC /* PostsViewModel.swift */; };
+		E6785DAC2C85FBAA00DD1DAC /* LoginHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785DAB2C85FBAA00DD1DAC /* LoginHelperTest.swift */; };
+		E6785DAF2C85FBD800DD1DAC /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785DAE2C85FBD800DD1DAC /* MockNetworkService.swift */; };
+		E6785DB12C86041B00DD1DAC /* StringUtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785DB02C86041B00DD1DAC /* StringUtilityTest.swift */; };
+		E6785DB32C8604BA00DD1DAC /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785DB22C8604BA00DD1DAC /* LoginViewModelTest.swift */; };
+		E6785DB52C8604FD00DD1DAC /* MockLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785DB42C8604FD00DD1DAC /* MockLoginHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +169,11 @@
 		E6785D942C85D27A00DD1DAC /* AppRootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootViewModel.swift; sourceTree = "<group>"; };
 		E6785D952C85D27A00DD1DAC /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E6785D962C85D27A00DD1DAC /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		E6785DAB2C85FBAA00DD1DAC /* LoginHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelperTest.swift; sourceTree = "<group>"; };
+		E6785DAE2C85FBD800DD1DAC /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		E6785DB02C86041B00DD1DAC /* StringUtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilityTest.swift; sourceTree = "<group>"; };
+		E6785DB22C8604BA00DD1DAC /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		E6785DB42C8604FD00DD1DAC /* MockLoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginHelper.swift; sourceTree = "<group>"; };
 		E7BD47525A2531522D709E82 /* Pods-PopularPosts-DatabaseModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts-DatabaseModule.debug.xcconfig"; path = "Target Support Files/Pods-PopularPosts-DatabaseModule/Pods-PopularPosts-DatabaseModule.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D2FF1D572E3C4FFE26E220 /* Pods-PopularPosts-DatabaseModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts-DatabaseModule.release.xcconfig"; path = "Target Support Files/Pods-PopularPosts-DatabaseModule/Pods-PopularPosts-DatabaseModule.release.xcconfig"; sourceTree = "<group>"; };
 		F4160AA73E579C7C2DE4AA38 /* Pods-PopularPosts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts.release.xcconfig"; path = "Target Support Files/Pods-PopularPosts/Pods-PopularPosts.release.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +297,10 @@
 		E6785D1F2C85CEC400DD1DAC /* PopularPostsTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6785DAD2C85FBC800DD1DAC /* mock */,
+				E6785DA92C85FB9200DD1DAC /* helper */,
+				E6785DAA2C85FB9200DD1DAC /* utility */,
+				E6785DA82C85FB9200DD1DAC /* viewmodel */,
 				E6785D202C85CEC400DD1DAC /* PopularPostsTests.swift */,
 			);
 			path = PopularPostsTests;
@@ -462,6 +476,39 @@
 				E6785D972C85D27A00DD1DAC /* viewModel */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		E6785DA82C85FB9200DD1DAC /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E6785DB22C8604BA00DD1DAC /* LoginViewModelTest.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E6785DA92C85FB9200DD1DAC /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				E6785DAB2C85FBAA00DD1DAC /* LoginHelperTest.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		E6785DAA2C85FB9200DD1DAC /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				E6785DB02C86041B00DD1DAC /* StringUtilityTest.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		E6785DAD2C85FBC800DD1DAC /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				E6785DAE2C85FBD800DD1DAC /* MockNetworkService.swift */,
+				E6785DB42C8604FD00DD1DAC /* MockLoginHelper.swift */,
+			);
+			path = mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -839,6 +886,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6785D212C85CEC400DD1DAC /* PopularPostsTests.swift in Sources */,
+				E6785DB52C8604FD00DD1DAC /* MockLoginHelper.swift in Sources */,
+				E6785DB12C86041B00DD1DAC /* StringUtilityTest.swift in Sources */,
+				E6785DAF2C85FBD800DD1DAC /* MockNetworkService.swift in Sources */,
+				E6785DB32C8604BA00DD1DAC /* LoginViewModelTest.swift in Sources */,
+				E6785DAC2C85FBAA00DD1DAC /* LoginHelperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,7 +1164,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U6T9BBGFE9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sf.PopularPostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1133,7 +1185,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U6T9BBGFE9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sf.PopularPostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
