@@ -7,9 +7,10 @@
 
 import Foundation
 
-protocol IPostsCrud {
-    func create(entity: IPostsEntity) throws
-    func read(id: Int) -> IPostsEntity?
-    func update(id: Int, entity: IBaseEntity) throws
+public protocol IPostsCrud {
+    func create(entity: IPostsEntity)
+    func read(id: Int, completion: @escaping (IPostsEntity?) -> Void)
+    func readAll(completion: @escaping ([IPostsEntity]) -> Void)
+    func update(entity: IPostsEntity)
     func delete(id: Int)
 }

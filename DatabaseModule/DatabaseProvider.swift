@@ -8,8 +8,10 @@
 import Foundation
 
 public class DatabaseProvider {
-    
     public static func getDatabaseInitialiser() -> IDatabaseInitialisation {
+        return RealmDatabaseConnection.shared
+    }
+    public static func getPostCrud() -> IPostsCrud {
         return RealmDatabaseConnection.shared
     }
 }

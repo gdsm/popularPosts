@@ -10,18 +10,37 @@ import RealmSwift
 
 final internal class RealmDatabaseConnection {
     static let shared = RealmDatabaseConnection()
+    private let queue = DispatchQueue(label: "RealmDatabaseConnection-Queue")
     private var realm: Realm!
     
+    private init() {
+        // Init not available due to privace protection.
+    }
+    
     private func save<T: Object>(entity: T) throws {
-        try realm.write {
-            realm.add(entity)
+        perform {
+            try self.realm.write {
+                self.realm.add(entity)
+            }
+        }
+    }
+    
+    private func perform(_ callback: @escaping () throws -> Void) {
+        queue.async {
+            try? callback()
         }
     }
 }
 
 extension RealmDatabaseConnection: IDatabaseInitialisation {
-    func initialize() throws {
-        realm = try Realm()
+    func initialize() {
+        perform {
+            do {
+                self.realm = try Realm(queue: self.queue)
+            } catch {
+                print("Exception in openning realm database.")
+            }
+        }
     }
 }
 
@@ -37,34 +56,64 @@ extension RealmDatabaseConnection: IPostsCrud {
         return result
     }
     
-    func create(entity: IPostsEntity) throws {
-        try save(entity: get(entity: entity))
-    }
-    
-    func read(id: Int) -> IPostsEntity? {
-        let predicate = NSPredicate(format: "id = %@", id)
+    private func read(id: Int) -> RealmPosts? {
+        let predicate = NSPredicate(format: "id = %ld", id)
         return realm.objects(RealmPosts.self).filter(predicate).first
     }
     
-    func update(id: Int, entity: IBaseEntity) throws {
-        guard let entity = read(id: id) else {
-            print("no such entity found with id: \(id)")
-            return
+    func create(entity: IPostsEntity) {
+        perform {
+            do {
+                if let _ = self.read(id: entity.id) {
+                    self.update(entity: entity)
+                } else {
+                    try self.save(entity: self.get(entity: entity))
+                }
+            } catch {
+                print("Exception in creating new entity \(entity)")
+            }
         }
-        let value = get(entity: entity)
-        value.userId = entity.userId
-        value.id = entity.id
-        value.title = entity.title
-        value.body = entity.body
-        value.isFavorite = entity.isFavorite
-        try save(entity: get(entity: entity))
+    }
+
+    func read(id: Int, completion: @escaping (IPostsEntity?) -> Void) {
+        perform {
+            completion(self.read(id: id))
+        }
+    }
+    
+    func readAll(completion: @escaping ([IPostsEntity]) -> Void) {
+        perform {
+            completion(self.realm.objects(RealmPosts.self).shuffled())
+        }
+    }
+
+    func update(entity: IPostsEntity) {
+        perform {
+            guard let current = self.read(id: entity.id) else {
+                print("no such entity found with id: \(entity.id)")
+                return
+            }
+            do {
+                try self.realm.write {
+                    current.userId = entity.userId
+                    current.id = entity.id
+                    current.title = entity.title
+                    current.body = entity.body
+                    current.isFavorite = entity.isFavorite
+                }
+            } catch {
+                print("Error in saving")
+            }
+        }
     }
 
     func delete(id: Int) {
-        guard let entity = read(id: id) else {
-            print("no such entity found with id: \(id)")
-            return
+        perform {
+            guard let entity = self.read(id: id) else {
+                print("no such entity found with id: \(id)")
+                return
+            }
+            self.realm.delete(self.get(entity: entity))
         }
-        realm.delete(get(entity: entity))
     }
 }

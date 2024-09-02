@@ -5,10 +5,11 @@
 //  Created by Gagandeep on 29/08/24.
 //
 
+import DatabaseModule
 import NetworkModule
 import SwiftUI
 
-final class PopularPost: Identifiable {
+final class PopularPost: Identifiable, IPostsEntity {
     let userId: Int
     let id: Int
     let title: String
@@ -26,5 +27,9 @@ final class PopularPost: Identifiable {
     
     convenience init(post: Post) {
         self.init(userId: post.userId, id: post.id, title: post.title, body: post.body)
+    }
+    
+    convenience init(post: IPostsEntity) {
+        self.init(userId: post.userId, id: post.id, title: post.title, body: post.body, isFavorite: post.isFavorite)
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol IDatabaseInitialisation {
-    func initialize() throws
+    func initialize()
 }

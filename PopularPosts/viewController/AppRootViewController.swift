@@ -17,11 +17,7 @@ class AppRootViewController: UIViewController {
         UIStoryboard.swizzleInstantiate()
         UIViewController.swizzlePresent()
 
-        do {
-//            try DatabaseProvider.getDatabaseInitialiser().initialize()
-        } catch {
-            print("Exception in initializing database.")
-        }
+        DatabaseProvider.getDatabaseInitialiser().initialize()
         // Do any initialisation setup here before proceeding to further app.
         launchLoginView()
 //        launchLoginViewController()

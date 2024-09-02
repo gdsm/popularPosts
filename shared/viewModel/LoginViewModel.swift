@@ -45,7 +45,7 @@ final class LoginViewModel: ObservableObject {
                 switch event {
                 case .next(let success):
                     return .just(.success(success))
-                case .error(let error):
+                case .error( _):
                     return .just(.failure(.unknown))
                 case .completed:
                     return .empty()

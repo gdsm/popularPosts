@@ -5,6 +5,7 @@
 //  Created by Gagandeep on 29/08/24.
 //
 
+import DatabaseModule
 import Foundation
 import NetworkModule
 import RxSwift
@@ -31,9 +32,19 @@ final class PostsHelper: IPostsHelper {
             switch result {
             case .success(let posts):
                 print("fetched posts \(posts.count)")
-                self.posts.onNext(posts.map { PopularPost(post: $0) })
-            case .failure(let error):
-                self.posts.onError(AppErrorEnum.networkError(nwError: error))
+                var popularPosts: [PopularPost] = []
+                for post in posts {
+                    let popPost = PopularPost(post: post)
+                    DatabaseProvider.getPostCrud().create(entity: popPost)
+                    popularPosts.append(popPost)
+                }
+                self.posts.onNext(popularPosts)
+            case .failure( _):
+                print("Failed to read entities from network. Reading locally.")
+                DatabaseProvider.getPostCrud().readAll { values in
+                    self.posts.onNext(values.map { PopularPost(post: $0) })
+                }
+//                self.posts.onError(AppErrorEnum.networkError(nwError: error))
             }
         }
     }
@@ -49,6 +60,7 @@ final class PostsHelper: IPostsHelper {
                 return
             }
             selectedPost.isFavorite = true
+            DatabaseProvider.getPostCrud().update(entity: selectedPost)
             self.posts.onNext(allPosts)
         }
     }
