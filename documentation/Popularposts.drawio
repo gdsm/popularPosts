@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
+  <diagram name="Page-1" id="YNsgHeiKAVROoNYo_3yS">
+    <mxGraphModel dx="954" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="550" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-2" target="59MlRtgGnUZM1Rp_ktxN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-2" value="LoginView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-3" target="59MlRtgGnUZM1Rp_ktxN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-3" value="PostsView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="295" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-4" value="PostDetailView" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="490" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-5" target="59MlRtgGnUZM1Rp_ktxN-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-5" value="LoginViewModel&lt;div&gt;- ILoginHelper&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-6" target="59MlRtgGnUZM1Rp_ktxN-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-6" value="PostViewModel&lt;div&gt;- IPostHelper&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="295" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-10" target="59MlRtgGnUZM1Rp_ktxN-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-10" target="59MlRtgGnUZM1Rp_ktxN-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="550" />
+              <mxPoint x="480" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-10" value="LoginHelper: ILoginHelper" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-12" target="59MlRtgGnUZM1Rp_ktxN-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="59MlRtgGnUZM1Rp_ktxN-12" target="59MlRtgGnUZM1Rp_ktxN-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-12" value="PostHelper&lt;div&gt;- IPostHelper&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="295" y="470" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-14" value="DatabaseModule" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="585" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59MlRtgGnUZM1Rp_ktxN-15" value="NetworkModule" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="350" y="585" width="260" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
