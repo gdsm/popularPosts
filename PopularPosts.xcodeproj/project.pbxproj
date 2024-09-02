@@ -13,7 +13,6 @@
 		DAF559281D45F381BFB37439 /* Pods_PopularPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA3A5C07C2E93A24CF9951A /* Pods_PopularPosts.framework */; };
 		E6785D0A2C85CEC200DD1DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D092C85CEC200DD1DAC /* AppDelegate.swift */; };
 		E6785D0C2C85CEC200DD1DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D0B2C85CEC200DD1DAC /* SceneDelegate.swift */; };
-		E6785D0E2C85CEC200DD1DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D0D2C85CEC200DD1DAC /* ViewController.swift */; };
 		E6785D112C85CEC200DD1DAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6785D102C85CEC200DD1DAC /* Base */; };
 		E6785D132C85CEC400DD1DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6785D122C85CEC400DD1DAC /* Assets.xcassets */; };
 		E6785D162C85CEC400DD1DAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6785D152C85CEC400DD1DAC /* Base */; };
@@ -33,6 +32,29 @@
 		E6785D6C2C85D1D600DD1DAC /* IPostsCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D632C85D1D600DD1DAC /* IPostsCrud.swift */; };
 		E6785D6D2C85D1D600DD1DAC /* IBaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D652C85D1D600DD1DAC /* IBaseEntity.swift */; };
 		E6785D6E2C85D1D600DD1DAC /* IPostsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D662C85D1D600DD1DAC /* IPostsEntity.swift */; };
+		E6785D792C85D25800DD1DAC /* FavoritePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D6F2C85D25800DD1DAC /* FavoritePostsView.swift */; };
+		E6785D7A2C85D25800DD1DAC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D702C85D25800DD1DAC /* LoginView.swift */; };
+		E6785D7B2C85D25800DD1DAC /* PopularPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D712C85D25800DD1DAC /* PopularPostsView.swift */; };
+		E6785D7C2C85D25800DD1DAC /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D722C85D25800DD1DAC /* PostDetailView.swift */; };
+		E6785D7D2C85D25800DD1DAC /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D732C85D25800DD1DAC /* PostRow.swift */; };
+		E6785D7E2C85D25800DD1DAC /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D742C85D25800DD1DAC /* PostsView.swift */; };
+		E6785D7F2C85D25800DD1DAC /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D762C85D25800DD1DAC /* AppRootViewController.swift */; };
+		E6785D802C85D25800DD1DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D772C85D25800DD1DAC /* LoginViewController.swift */; };
+		E6785D992C85D27A00DD1DAC /* ILoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D812C85D27A00DD1DAC /* ILoginHelper.swift */; };
+		E6785D9A2C85D27A00DD1DAC /* IPostsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D822C85D27A00DD1DAC /* IPostsHelper.swift */; };
+		E6785D9B2C85D27A00DD1DAC /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D832C85D27A00DD1DAC /* LoginHelper.swift */; };
+		E6785D9C2C85D27A00DD1DAC /* PostsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D842C85D27A00DD1DAC /* PostsHelper.swift */; };
+		E6785D9D2C85D27A00DD1DAC /* AppErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D862C85D27A00DD1DAC /* AppErrorEnum.swift */; };
+		E6785D9E2C85D27A00DD1DAC /* AppScreensEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D872C85D27A00DD1DAC /* AppScreensEnum.swift */; };
+		E6785D9F2C85D27A00DD1DAC /* PopularPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D892C85D27A00DD1DAC /* PopularPost.swift */; };
+		E6785DA02C85D27A00DD1DAC /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D8A2C85D27A00DD1DAC /* PostComments.swift */; };
+		E6785DA12C85D27A00DD1DAC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E6785D8D2C85D27A00DD1DAC /* Localizable.xcstrings */; };
+		E6785DA22C85D27A00DD1DAC /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D8E2C85D27A00DD1DAC /* LocalizedStrings.swift */; };
+		E6785DA32C85D27A00DD1DAC /* ModalSwizzleExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D912C85D27A00DD1DAC /* ModalSwizzleExtenstion.swift */; };
+		E6785DA42C85D27A00DD1DAC /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D922C85D27A00DD1DAC /* StringUtility.swift */; };
+		E6785DA52C85D27A00DD1DAC /* AppRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D942C85D27A00DD1DAC /* AppRootViewModel.swift */; };
+		E6785DA62C85D27A00DD1DAC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D952C85D27A00DD1DAC /* LoginViewModel.swift */; };
+		E6785DA72C85D27A00DD1DAC /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6785D962C85D27A00DD1DAC /* PostsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +121,6 @@
 		E6785D062C85CEC200DD1DAC /* PopularPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6785D092C85CEC200DD1DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6785D0B2C85CEC200DD1DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E6785D0D2C85CEC200DD1DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E6785D102C85CEC200DD1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6785D122C85CEC400DD1DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6785D152C85CEC400DD1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,6 +141,29 @@
 		E6785D632C85D1D600DD1DAC /* IPostsCrud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPostsCrud.swift; sourceTree = "<group>"; };
 		E6785D652C85D1D600DD1DAC /* IBaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBaseEntity.swift; sourceTree = "<group>"; };
 		E6785D662C85D1D600DD1DAC /* IPostsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPostsEntity.swift; sourceTree = "<group>"; };
+		E6785D6F2C85D25800DD1DAC /* FavoritePostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePostsView.swift; sourceTree = "<group>"; };
+		E6785D702C85D25800DD1DAC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E6785D712C85D25800DD1DAC /* PopularPostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularPostsView.swift; sourceTree = "<group>"; };
+		E6785D722C85D25800DD1DAC /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		E6785D732C85D25800DD1DAC /* PostRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
+		E6785D742C85D25800DD1DAC /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		E6785D762C85D25800DD1DAC /* AppRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		E6785D772C85D25800DD1DAC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6785D812C85D27A00DD1DAC /* ILoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILoginHelper.swift; sourceTree = "<group>"; };
+		E6785D822C85D27A00DD1DAC /* IPostsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPostsHelper.swift; sourceTree = "<group>"; };
+		E6785D832C85D27A00DD1DAC /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		E6785D842C85D27A00DD1DAC /* PostsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsHelper.swift; sourceTree = "<group>"; };
+		E6785D862C85D27A00DD1DAC /* AppErrorEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppErrorEnum.swift; sourceTree = "<group>"; };
+		E6785D872C85D27A00DD1DAC /* AppScreensEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppScreensEnum.swift; sourceTree = "<group>"; };
+		E6785D892C85D27A00DD1DAC /* PopularPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularPost.swift; sourceTree = "<group>"; };
+		E6785D8A2C85D27A00DD1DAC /* PostComments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
+		E6785D8D2C85D27A00DD1DAC /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E6785D8E2C85D27A00DD1DAC /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		E6785D912C85D27A00DD1DAC /* ModalSwizzleExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalSwizzleExtenstion.swift; sourceTree = "<group>"; };
+		E6785D922C85D27A00DD1DAC /* StringUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtility.swift; sourceTree = "<group>"; };
+		E6785D942C85D27A00DD1DAC /* AppRootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootViewModel.swift; sourceTree = "<group>"; };
+		E6785D952C85D27A00DD1DAC /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E6785D962C85D27A00DD1DAC /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		E7BD47525A2531522D709E82 /* Pods-PopularPosts-DatabaseModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts-DatabaseModule.debug.xcconfig"; path = "Target Support Files/Pods-PopularPosts-DatabaseModule/Pods-PopularPosts-DatabaseModule.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D2FF1D572E3C4FFE26E220 /* Pods-PopularPosts-DatabaseModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts-DatabaseModule.release.xcconfig"; path = "Target Support Files/Pods-PopularPosts-DatabaseModule/Pods-PopularPosts-DatabaseModule.release.xcconfig"; sourceTree = "<group>"; };
 		F4160AA73E579C7C2DE4AA38 /* Pods-PopularPosts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularPosts.release.xcconfig"; path = "Target Support Files/Pods-PopularPosts/Pods-PopularPosts.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +245,7 @@
 		E6785CFD2C85CEC200DD1DAC = {
 			isa = PBXGroup;
 			children = (
+				E6785D982C85D27A00DD1DAC /* shared */,
 				E6785D082C85CEC200DD1DAC /* PopularPosts */,
 				E6785D1F2C85CEC400DD1DAC /* PopularPostsTests */,
 				E6785D292C85CEC400DD1DAC /* PopularPostsUITests */,
@@ -227,9 +272,10 @@
 		E6785D082C85CEC200DD1DAC /* PopularPosts */ = {
 			isa = PBXGroup;
 			children = (
+				E6785D752C85D25800DD1DAC /* view */,
+				E6785D782C85D25800DD1DAC /* viewController */,
 				E6785D092C85CEC200DD1DAC /* AppDelegate.swift */,
 				E6785D0B2C85CEC200DD1DAC /* SceneDelegate.swift */,
-				E6785D0D2C85CEC200DD1DAC /* ViewController.swift */,
 				E6785D0F2C85CEC200DD1DAC /* Main.storyboard */,
 				E6785D122C85CEC400DD1DAC /* Assets.xcassets */,
 				E6785D142C85CEC400DD1DAC /* LaunchScreen.storyboard */,
@@ -308,6 +354,114 @@
 				E6785D662C85D1D600DD1DAC /* IPostsEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		E6785D752C85D25800DD1DAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D6F2C85D25800DD1DAC /* FavoritePostsView.swift */,
+				E6785D702C85D25800DD1DAC /* LoginView.swift */,
+				E6785D712C85D25800DD1DAC /* PopularPostsView.swift */,
+				E6785D722C85D25800DD1DAC /* PostDetailView.swift */,
+				E6785D732C85D25800DD1DAC /* PostRow.swift */,
+				E6785D742C85D25800DD1DAC /* PostsView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E6785D782C85D25800DD1DAC /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D762C85D25800DD1DAC /* AppRootViewController.swift */,
+				E6785D772C85D25800DD1DAC /* LoginViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		E6785D852C85D27A00DD1DAC /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D812C85D27A00DD1DAC /* ILoginHelper.swift */,
+				E6785D822C85D27A00DD1DAC /* IPostsHelper.swift */,
+				E6785D832C85D27A00DD1DAC /* LoginHelper.swift */,
+				E6785D842C85D27A00DD1DAC /* PostsHelper.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		E6785D882C85D27A00DD1DAC /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D862C85D27A00DD1DAC /* AppErrorEnum.swift */,
+				E6785D872C85D27A00DD1DAC /* AppScreensEnum.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		E6785D8B2C85D27A00DD1DAC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D882C85D27A00DD1DAC /* enums */,
+				E6785D892C85D27A00DD1DAC /* PopularPost.swift */,
+				E6785D8A2C85D27A00DD1DAC /* PostComments.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E6785D8C2C85D27A00DD1DAC /* repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		E6785D8F2C85D27A00DD1DAC /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D8D2C85D27A00DD1DAC /* Localizable.xcstrings */,
+				E6785D8E2C85D27A00DD1DAC /* LocalizedStrings.swift */,
+			);
+			path = strings;
+			sourceTree = "<group>";
+		};
+		E6785D902C85D27A00DD1DAC /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D8F2C85D27A00DD1DAC /* strings */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		E6785D932C85D27A00DD1DAC /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D912C85D27A00DD1DAC /* ModalSwizzleExtenstion.swift */,
+				E6785D922C85D27A00DD1DAC /* StringUtility.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		E6785D972C85D27A00DD1DAC /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D942C85D27A00DD1DAC /* AppRootViewModel.swift */,
+				E6785D952C85D27A00DD1DAC /* LoginViewModel.swift */,
+				E6785D962C85D27A00DD1DAC /* PostsViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		E6785D982C85D27A00DD1DAC /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				E6785D852C85D27A00DD1DAC /* helpers */,
+				E6785D8B2C85D27A00DD1DAC /* models */,
+				E6785D8C2C85D27A00DD1DAC /* repo */,
+				E6785D902C85D27A00DD1DAC /* resources */,
+				E6785D932C85D27A00DD1DAC /* utility */,
+				E6785D972C85D27A00DD1DAC /* viewModel */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +642,7 @@
 			files = (
 				E6785D132C85CEC400DD1DAC /* Assets.xcassets in Resources */,
 				E6785D162C85CEC400DD1DAC /* Base in Resources */,
+				E6785DA12C85D27A00DD1DAC /* Localizable.xcstrings in Resources */,
 				E6785D112C85CEC200DD1DAC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,9 +807,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6785D0E2C85CEC200DD1DAC /* ViewController.swift in Sources */,
+				E6785DA62C85D27A00DD1DAC /* LoginViewModel.swift in Sources */,
+				E6785D9B2C85D27A00DD1DAC /* LoginHelper.swift in Sources */,
+				E6785D992C85D27A00DD1DAC /* ILoginHelper.swift in Sources */,
+				E6785D7F2C85D25800DD1DAC /* AppRootViewController.swift in Sources */,
+				E6785D9C2C85D27A00DD1DAC /* PostsHelper.swift in Sources */,
 				E6785D0A2C85CEC200DD1DAC /* AppDelegate.swift in Sources */,
+				E6785D7B2C85D25800DD1DAC /* PopularPostsView.swift in Sources */,
+				E6785D792C85D25800DD1DAC /* FavoritePostsView.swift in Sources */,
+				E6785DA02C85D27A00DD1DAC /* PostComments.swift in Sources */,
+				E6785DA52C85D27A00DD1DAC /* AppRootViewModel.swift in Sources */,
+				E6785D7C2C85D25800DD1DAC /* PostDetailView.swift in Sources */,
+				E6785D9E2C85D27A00DD1DAC /* AppScreensEnum.swift in Sources */,
+				E6785D7A2C85D25800DD1DAC /* LoginView.swift in Sources */,
+				E6785D7D2C85D25800DD1DAC /* PostRow.swift in Sources */,
 				E6785D0C2C85CEC200DD1DAC /* SceneDelegate.swift in Sources */,
+				E6785D7E2C85D25800DD1DAC /* PostsView.swift in Sources */,
+				E6785D802C85D25800DD1DAC /* LoginViewController.swift in Sources */,
+				E6785DA22C85D27A00DD1DAC /* LocalizedStrings.swift in Sources */,
+				E6785D9A2C85D27A00DD1DAC /* IPostsHelper.swift in Sources */,
+				E6785DA32C85D27A00DD1DAC /* ModalSwizzleExtenstion.swift in Sources */,
+				E6785DA72C85D27A00DD1DAC /* PostsViewModel.swift in Sources */,
+				E6785D9D2C85D27A00DD1DAC /* AppErrorEnum.swift in Sources */,
+				E6785D9F2C85D27A00DD1DAC /* PopularPost.swift in Sources */,
+				E6785DA42C85D27A00DD1DAC /* StringUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,7 +975,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -856,7 +1032,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

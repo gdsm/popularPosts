@@ -2,15 +2,13 @@
 //  AppDelegate.swift
 //  PopularPosts
 //
-//  Created by Gagandeep on 02/09/24.
+//  Created by Gagandeep on 28/08/24.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
