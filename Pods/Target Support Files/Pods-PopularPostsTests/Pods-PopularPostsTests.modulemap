@@ -1,0 +1,6 @@
+framework module Pods_PopularPostsTests {
+  umbrella header "Pods-PopularPostsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

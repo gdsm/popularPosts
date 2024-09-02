@@ -1,0 +1,6 @@
+framework module Pods_PopularPosts_DatabaseModule {
+  umbrella header "Pods-PopularPosts-DatabaseModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
